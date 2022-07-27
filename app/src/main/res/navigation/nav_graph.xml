@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tbcrevision4.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentForThree"
+            app:destination="@id/fragmentForThree" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentForFour"
+            app:destination="@id/fragmentForFour" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentForFive"
+            app:destination="@id/fragmentForFive" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentForFive"
+        android:name="com.example.tbcrevision4.FragmentForFive"
+        android:label="fragment_for_five"
+        tools:layout="@layout/fragment_for_five" />
+    <fragment
+        android:id="@+id/fragmentForFour"
+        android:name="com.example.tbcrevision4.FragmentForFour"
+        android:label="fragment_for_four"
+        tools:layout="@layout/fragment_for_four" />
+    <fragment
+        android:id="@+id/fragmentForThree"
+        android:name="com.example.tbcrevision4.FragmentForThree"
+        android:label="fragment_for_three"
+        tools:layout="@layout/fragment_for_three" />
+</navigation>
